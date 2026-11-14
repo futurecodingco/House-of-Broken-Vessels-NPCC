@@ -1,0 +1,6 @@
+{
+  "name": "House of Broken Vessels NPC",
+  "description": "A welcoming, safe sanctuary for healing the hearts of broken women in Mid Ennerdale, South Africa. Registered Non-Profit Company (K2021582044) partnered with Changing Life Ministries.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
