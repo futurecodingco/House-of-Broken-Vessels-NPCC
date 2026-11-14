@@ -1,6 +1,7 @@
 import React from 'react';
 import { Shield, Heart, Award, Users, MapPin } from 'lucide-react';
 import { LeadershipMember } from '../types';
+import ennerdaleLandscapeImg from '../assets/images/ennerdale_landscape_hope_1793870284226.jpg';
 
 export const LeadershipSection: React.FC = () => {
   const leaders: LeadershipMember[] = [
@@ -122,7 +123,7 @@ export const LeadershipSection: React.FC = () => {
             {/* Gauteng Dawn Landscape Image */}
             <div className="lg:col-span-4 overflow-hidden rounded-xl border border-[#D5C6B6] shadow-sm">
               <img
-                src="/src/assets/images/ennerdale_landscape_hope_1793870284226.jpg"
+                src={ennerdaleLandscapeImg}
                 alt="Golden sunrise over the rolling hills of Gauteng symbolizing a new dawn for women in Mid Ennerdale"
                 className="w-full h-48 sm:h-56 object-cover"
                 referrerPolicy="no-referrer"

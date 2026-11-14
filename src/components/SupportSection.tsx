@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ShieldCheck, Lock, Send, MessageSquare, PhoneCall, Mail, MapPin, CheckCircle, HeartHandshake, AlertCircle } from 'lucide-react';
 import { SupportRequest } from '../types';
 
@@ -17,6 +17,15 @@ export const SupportSection: React.FC<SupportSectionProps> = ({ initialPillar })
     message: initialPillar ? `I would like to register for the ${initialPillar} program.` : '',
     consentConfidential: true
   });
+
+  useEffect(() => {
+    if (initialPillar) {
+      setFormData((prev) => ({
+        ...prev,
+        message: `I would like to register for the ${initialPillar} program.`
+      }));
+    }
+  }, [initialPillar]);
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);

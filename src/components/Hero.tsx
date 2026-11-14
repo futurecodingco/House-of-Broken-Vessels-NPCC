@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowDown, ExternalLink, ShieldCheck, Heart, Sparkles } from 'lucide-react';
+import heroRestoredVesselImg from '../assets/images/hero_restored_vessel_1793870282007.jpg';
 
 interface HeroProps {
   onOpenSupport: () => void;
@@ -112,7 +113,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenSupport }) => {
               {/* Image Frame with Architectural Soft Shadow */}
               <div className="overflow-hidden rounded-2xl border border-[#DFD4C5] bg-[#F3ECE2] shadow-xl">
                 <img
-                  src="/src/assets/images/hero_restored_vessel_1793870282007.jpg"
+                  src={heroRestoredVesselImg}
                   alt="A handcrafted ceramic clay vessel with delicate golden kintsugi repair seams held tenderly in compassionate hands"
                   className="w-full h-auto object-cover aspect-[4/3] lg:aspect-auto"
                   referrerPolicy="no-referrer"

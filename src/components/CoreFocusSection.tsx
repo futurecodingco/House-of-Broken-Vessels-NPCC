@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Users, Heart, Sparkles, CheckCircle2, ArrowRight, ShieldCheck, Clock, BookOpen } from 'lucide-react';
 import { FocusPillar } from '../types';
+import sanctuarySafeCircleImg from '../assets/images/sanctuary_safe_circle_1793870283666.jpg';
+import healingHopeHandsImg from '../assets/images/healing_hope_hands_1793870283808.jpg';
 
 interface CoreFocusSectionProps {
   onSelectPillar: (pillarTitle: string) => void;
@@ -171,8 +173,8 @@ export const CoreFocusSection: React.FC<CoreFocusSectionProps> = ({ onSelectPill
                   <img
                     src={
                       activeTab === 'safe_spaces'
-                        ? '/src/assets/images/sanctuary_safe_circle_1793870283666.jpg'
-                        : '/src/assets/images/healing_hope_hands_1793870283808.jpg'
+                        ? sanctuarySafeCircleImg
+                        : healingHopeHandsImg
                     }
                     alt={currentPillar.title}
                     className="w-full h-64 sm:h-72 lg:h-80 object-cover"

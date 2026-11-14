@@ -54,7 +54,7 @@ export const LocationSection: React.FC = () => {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <div className="w-8 h-8 rounded-lg bg-[#EAF1EC] border border-[#C9DC CE] flex items-center justify-center text-[#3D5E4C] shrink-0 mt-0.5">
+                  <div className="w-8 h-8 rounded-lg bg-[#EAF1EC] border border-[#C9DCCE] flex items-center justify-center text-[#3D5E4C] shrink-0 mt-0.5">
                     <ShieldCheck className="w-4 h-4" />
                   </div>
                   <div>
